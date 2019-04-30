@@ -1,0 +1,83 @@
+*{
+    margin: 0;padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.bodys{
+    width: 975px;height: 500px;
+    margin: auto;
+}
+header{
+    width: 975px;height: 70px;
+    background: linear-gradient(180deg,#FEF3D4,#FFFBF0);
+}
+header img{
+    position: relative;top:16px;
+    left: 30px;
+}
+header p{
+    float: right;
+    position: relative;top:40px;
+    right: 20px;
+}
+header span::after{
+    content: '|';
+}
+.nav{
+    text-align: center;
+}
+nav{
+    width: 950px;height: 40px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+nav img{
+    float: left;
+}
+article{
+    width: 950px;height: 400px;
+    border: 1px solid;
+    margin: auto;position: relative;
+}
+.top{
+    width: 400px;height: 100px;
+    position: relative;left: 100px;height: 55px;margin-top: 30px;
+}
+.top img{
+    float: left;
+}
+.top p{
+    position: relative;top:10px;
+}
+hr{
+    width: 90%;margin: auto;
+    border: dashed 1px;
+}
+.brown{
+    color: brown;font-size: 13px
+}
+form{
+    width: 700px;height: 300px;
+    display: flex;
+}
+.f-left{
+    flex: 1;text-align: right;
+}
+.f-right{
+    flex: 3;
+}
+.inp1{
+    height: 13px;background-color: #FEF4D0;
+}
+.f-right-s{
+    background-color: #FEF4D0;
+    border: 1px solid;margin-left: 5px;
+    color: brown;
+}
+.p-login{
+    position: relative;top:10px;
+    cursor: pointer;
+}
+

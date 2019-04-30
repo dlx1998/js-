@@ -1,0 +1,12 @@
+<iframe src="top.html" frameborder="0" width="962px" height="150px" scrolling="no" frameborder="0"></iframe>
+
+
+
+<iframe src="bottom.html" frameborder="0" width="962px" height="81px" scrolling="no" frameborder="0"></iframe>
+
+
+
+nav{
+    width: 962px;height: 67px;
+    background: url(../img/dd_index_top_adver.jpg) no-repeat;
+}

@@ -1,0 +1,10 @@
+*{
+    margin: 0px;padding: 0px;
+}
+.bodys{
+    width: 962px;height: 81px;margin: auto;
+    font-size: 13px;text-align: center;
+}
+img{
+    position: relative;top: 17px;
+}

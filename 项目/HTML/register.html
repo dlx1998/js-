@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <div class="bodys">
+        <header>
+            <img src="../img/logo.gif" alt="">
+            <p>
+                <a href=""><span>首页</span></a>
+                <a href=""><span>商品展示页</span></a>
+                <a href=""><span>购物车</span></a>
+                <a href="">登录</a>
+            </p>
+        </header>
+        <nav>
+            <img src="../img/register_top_bg.gif" alt="">
+            <img src="../img/register_tag_left.gif" alt="">
+            <img src="../img/register_tag_mid.gif" alt="">
+            <img src="../img/register_tag_right.gif" alt="">
+        </nav>
+        <article>
+            <div class="top">
+                <img src="../img/register_pic_01.gif" alt="">
+                <p>HI,欢迎注册当当网！尽享多重优惠服务。</p>
+                <p class="brown">您提供的资料不会做其他用途，敬请安心填写</p>
+            </div>
+            <hr>
+            <form action="login.html" method="get" id="login">
+                <div class="f-left">
+                    <p>Email地址：</p>
+                    <p>设置昵称：</p>
+                    <p>设定密码：</p>
+                    <p>再次输入密码：</p>
+                    <p>性别：</p>
+                    <p>所在地区：</p>
+                </div>
+                <div class="f-right">
+                    <p><input onblur="email()"  class="inp1" id="inp1" type="text"><span id="email-s" class="f-right-s">电子邮件是必填项，请输入Email地址</span></p>
+                    <p><input onblur="nic()"  class="inp1" id="inp2" type="text"><span id="nic-s" class="f-right-s">昵称为必填项，请输入您的昵称</span></p>
+                    <p><input onblur="pwd()"  class="inp1" id="inp3" type="password"><span id="pwd-s" class="f-right-s">密码为必填项，请设置您的密码</span></p>
+                    <p><input onblur="pwds()"  class="inp1" id="inp4" type="password"><span id="pwds-s" class="f-right-s">请在此输入您的密码</span></p>
+                    <p>
+                        <input type="radio" name="sex" value="男" checked>男
+                        <input type="radio" name="sex" value="女">女
+                    </p>
+                    <p>
+                        <select name="sel1" id="province" onchange="changecity(this)">
+                            <option value="">请选择省份</option>
+                        </select>
+                        <select name="sel2" id="city">
+                            <option value="">请选择城市</option>
+                        </select>
+                    </p>
+                    <p >
+                        <img class="p-login" src="../img/register_btn_out.gif" alt="" onclick="register()">
+                    </p>
+                </div>
+            </form>
+        </article>
+        <iframe src="bottom.html" frameborder="0" width="962px" height="81px" scrolling="no" frameborder="0"></iframe>
+    </div>
+</body>
+<script src="../js/register.js"></script>
+</html>

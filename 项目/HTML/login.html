@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="bodys">
+        <nav>
+            <div class="nav-d1">
+                <img src="../img/logo.gif" alt="">
+                <img src="../img/login_header.gif" alt="">
+            </div>
+            <div class="nav-d2">
+                <span><a href=""> 首页</a></span>
+                <span><a href=""> 商品展示页</a></span>
+                <span><a href=""> 购物车</a></span>
+                <span id="nav-d2-s"><a href=""> 注册</a></span>
+            </div>
+        </nav>
+        <article>
+            <img src="../img/login_main_01.jpg" alt="">
+            <img src="../img/login_main_02.jpg" alt="">
+            <img src="../img/login_main_03.jpg" alt="">
+            <form action="content.html" id="login">
+                <div class="unlock"></div>
+                <p class="article-p1">请登录当当网</p>
+                <img src="../img/" alt="">
+                <hr>
+                <div class="article-d1">
+                    <div class="article-left">
+                        <p>Email地址或昵称:</p>
+                        <p>密码:</p>
+                    </div>
+                    <div class="article-right">
+                        <p><input type="text" onblur="emails()" id="email"></p>
+                        <p><input type="text" onblur="pwds()" id="pwd"></p>
+                        <div class="login" onclick="check()"></div>
+                    </div>
+                </div>
+                <div class="article-bottom">
+                    <p><span>还不是当当用户?</span>快捷方便的注册让您立刻尽享当当网提供的条项优惠服务</p>
+                    <a href="./register.html">
+                        <div class="register"></div>
+                    </a>
+                </div>
+            </form>
+            <img src="../img/login_main_04.jpg" alt="">
+        </article>
+        <footer>
+            <figure>
+                <p class="footer-p1">更多选择、更低价格</p>
+                <p>100万种商品包含图书、数码、美妆运动健康等，价格低于地面店20%以上</p>
+            </figure>
+            <figure>
+                <p class="footer-p1">更多选择、更低价格</p>
+                <p>100万种商品包含图书、数码、美妆运动健康等，价格低于地面店20%以上</p>
+            </figure>
+            <figure>
+                <p class="footer-p1">更多选择、更低价格</p>
+                <p>100万种商品包含图书、数码、美妆运动健康等，价格低于地面店20%以上</p>
+            </figure>
+        </footer>
+        <iframe src="bottom.html" frameborder="0" width="1000px" height="81px" scrolling="no" frameborder="0"></iframe>
+    </div>
+</body>
+<script>
+    function emails(){
+        var email = document.getElementById('email');
+        var reg = /^([a-z]|[A-Z])\w{2,17}@([a-z]|[A-Z])+\.com$/;
+        if(reg.test(email.value)){
+            alert('格式正确');
+            return true;
+        }else{
+            alert('email格式不对');
+            return false;
+        }
+    }
+    function pwds(){
+        var pwd = document.getElementById('pwd');
+        if(pwd.value===""){
+            alert('密码不能为空');
+            return false;
+        }else{
+            return true;
+        }
+    }
+    function check(){
+        var result = emails();
+        if(!result){
+            return;
+        }
+        result = pwds();
+        if(!result){
+            return;
+        }
+        document.getElementById('login').submit();
+    }
+</script>
+</html>

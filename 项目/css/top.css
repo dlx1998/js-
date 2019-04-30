@@ -1,0 +1,87 @@
+*{
+    margin: 0;padding: 0;text-decoration: none;
+}
+.header-d1{
+    width: 500px;height: 30px;border-radius: 5px;border: 1px solid grey;border-bottom: none;
+    display: inline-block;background-color: #F3F3F3;
+}
+.header-d1 span{
+    font-size: 13px;border-left: 1px solid;
+    padding-left: 5px;line-height: 30px;color: black;
+}
+#header-d1-s1{
+    border: none;
+}
+.header-d2{
+    width: 300px;height: 30px;
+    display: inline-block;position: relative;left: 41px;
+}
+.header-d2-d1,.header-d2-d2,.header-d2-d3{
+    display: inline-block;font-size: 10px;
+    text-align: center;line-height: 30px;
+    color: #B74F28;
+}
+.header-d2-d1{
+    background: url(../img/dd_header_1_a.jpg) no-repeat;
+    width: 52px;height: 30px;
+    
+}
+.header-d2-d2{
+    background: url(../img/dd_header_2_a.jpg) no-repeat;
+    width: 40px;height: 30px;
+}
+.header-d2-d3{
+    background: url(../img/dd_header_3_a.jpg) no-repeat;
+    width: 68px;height: 30px;position: relative;
+}
+.header-d2-d4{
+    width: 32px;height: 17px;display: inline-block;
+    background: url(../img/dd_header_top.png);
+    position: relative;top: 5px;
+}
+nav{
+    width: 962px;height: 40px;background-color: #FD7E0C;
+    border-radius: 5px;text-align: center;line-height: 40px;
+    color: #fff;
+}
+nav span{
+    font-size: 13px;border-left: 1px solid;
+    padding-left: 5px;line-height: 30px;color: #fff;
+    cursor: pointer;
+}
+article{
+    width: 962px;height: 40px;
+    background-color: #E8E8E8;
+    border-radius: 5px;position: relative;
+}
+article input{
+    width: 180px;float: left; margin-left:   20px;margin-top:  9px;
+}
+.article-d1{
+    width: 100px;height: 25px;float: left;
+    margin-left: 5px;margin-top: 8px;
+    background: url(../img/dd_header_search_btn.jpg) no-repeat;
+}
+.article-d2{
+    width: 72px;height: 25px;float: left;
+    margin-left: 5px;margin-top: 8px;
+    background: url(../img/dd_header_search_top.jpg) no-repeat;
+    cursor: pointer;
+}
+article span{
+    float: left;margin-left: 5px;margin-top: 8px;
+    padding-left: 5px;
+}
+.article-img1{
+    float: left;margin-left: 13px;margin-top: 16px;
+}
+.article-img2{
+    float: left;margin-top: 7px;
+    padding-left: 5px;
+}
+article span::after{
+    content: '|';
+}
+.article-s1::after{
+    content: '';
+}

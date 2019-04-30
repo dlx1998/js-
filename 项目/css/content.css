@@ -1,0 +1,124 @@
+*{
+    margin: 0;padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.bodys{
+    width: 962px;height: 1200px;
+    margin: auto;
+}
+nav{
+    width: 962px;height: 67px;
+    background: url(../img/dd_index_top_adver.jpg) no-repeat;
+}
+header{
+    width: 962px;height: 25px;background-color: #F8F8F8;
+    display: flex;
+}
+header div{
+    display: inline-block;
+    flex: 1;justify-content: space-between;
+}
+.header-d{
+    text-align: right;
+}
+header span::after{
+    content: '|';
+}
+.header-s::after{
+    content: '';
+}
+aside{
+    width: 177px;height: 778px;
+    float: left;position: relative;
+    top: 10px;
+}
+.aside-p1{
+    background-color: #E46F04;
+    color: #fff;text-indent: 10px;
+}
+.aside-d1{
+    width: 157px;height: 479px;border: 1px solid;
+    padding: 10px;background-color: #FFF4D7;
+}
+.aside-d2{
+    width: 177px;height: 100px;
+}
+aside img{
+    border: 1px solid;
+}
+
+
+article{
+    width: 770px;height: 1446px;border: 1px solid;
+    float: left;position: relative;top :10px;
+    left: 10px;
+}
+.article-d{
+    width: 100%;height: 45px;
+    display: flex;background-color: #F9D8A9;
+    line-height: 45px;
+}
+.article-d1{
+    flex: 3;
+}
+.article-d2{
+    flex: 1;text-align: right;
+}
+.article-d1-img1{
+    width: 7px;height:  7px;
+    position: relative;left: 5px;
+}
+#slelct1{
+    width: 125px;height: 25px;
+}
+.article-content{
+    width: 770px;height: 1328px;
+    display: flex;flex-direction: column;
+}
+.article-content div{
+    flex: 1;padding: 10px;
+}
+.article-content-img1{
+    margin-bottom: 50px;
+    float: left;position: relative;
+}
+.article-span1{
+    text-decoration: line-through;
+}
+.article-content-p{
+    text-align: right;
+}
+.article-span2{
+    color: brown;
+}
+.hr1{
+    text-decoration: dashed;
+}
+figure{
+    width: 100%;height: 20px;
+    text-align: right;
+}
+figure img{
+
+    position: relative;
+
+}
+dl{
+    list-style-type: none;
+    display: inline-block;
+}
+dl dt{
+    width: 20px;height: 20px;
+    background-color: #FFCC66;
+    position: relative;
+    float: right;margin-left: 3px;
+    text-align: center;
+}
+.dt1{
+    background-color: #fff;
+}
+.inp1{
+    width: 20PX;
+}
